@@ -75,10 +75,10 @@ OBJECTID	[a-z][a-zA-Z0-9_]*
 ASSIGN	<-
 NOT	[nN][oO][tT]
 LE	<=
-SPEC (<|\+|-|\*|\/|\.|\~|\=|\)|\(|\{|\}|\:|;|,|@) 
+SPEC [-+<~=)(}{:;,@\*\/\.] 
 CMT_ONE	--[^\n]*
-CMT_LEFT	\(\*
-CMT_RIGHT	\*\)
+CMT_LEFT	"("\*
+CMT_RIGHT	\*")"
 /*CMT_MUL_OPEN	\(\*([^\*]*(\*[^\)])?)* */
 
 %%
